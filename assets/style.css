@@ -3,7 +3,7 @@
   --surface: #ffffff;
   --text: #1f1c18;
   --muted: #6b645a;
-  --accent: #9a3b26;
+  --accent: #2f5a43;
   --rule: #e6dfd3;
   --serif: "Fraunces", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, sans-serif;
@@ -15,7 +15,7 @@
     --surface: #201d1a;
     --text: #ece6dc;
     --muted: #a39a8c;
-    --accent: #e08a6c;
+    --accent: #8fc2a3;
     --rule: #34302b;
   }
 }
@@ -114,4 +114,23 @@ footer {
 @media (max-width: 520px) {
   nav { gap: 14px; font-size: 0.875rem; }
   .timeline article { grid-template-columns: 56px 1fr; }
+}
+
+.dek { margin: -8px 0 24px; color: var(--muted); font-size: 1.05rem; }
+.more { margin: 32px 0 0; font-weight: 500; }
+
+.article section > p { max-width: 65ch; }
+
+.table-scroll { overflow-x: auto; margin: 24px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+th { font-weight: 500; color: var(--muted); }
+td:first-child { white-space: nowrap; }
+
+ul.plain { padding-left: 20px; }
+ul.plain li { margin-bottom: 12px; }
+
+@media (max-width: 620px) {
+  .site-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  nav { flex-wrap: wrap; gap: 6px 16px; }
 }
