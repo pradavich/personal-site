@@ -137,8 +137,8 @@
         Joe Gibbs to Mad Professor.
       </p>
       <p class="links">
+        <a id="email" href="#">peter at radavich dot com</a>
         <a href="https://github.com/pradavich">GitHub</a>
-        <!-- TODO: add email / other links -->
       </p>
     </section>
   </main>
@@ -147,6 +147,13 @@
     <p>&copy; <span id="year">2026</span> Peter Radavich · Baltimore, Maryland</p>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Assemble the address in the browser to keep it away from simple scrapers.
+    const email = document.getElementById('email');
+    const addr = ['peter', 'radavich.com'].join('@');
+    email.href = 'mailto:' + addr;
+    email.textContent = addr;
+  </script>
 </body>
 </html>
