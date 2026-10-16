@@ -5,8 +5,8 @@ Peter Radavich's personal website. Plain HTML + CSS, no build step.
 ## Preview locally
 
 ```sh
-python3 -m http.server 8000
-# open http://localhost:8000
+python3 -m http.server 8080
+# open http://localhost:8080
 ```
 
 ## Structure
