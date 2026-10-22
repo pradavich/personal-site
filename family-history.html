@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/leaflet-1.9.4/leaflet.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -47,13 +48,23 @@
     <section>
       <h2>Where he came from</h2>
       <p>Fred was born <strong>Фаддей (Faddei)</strong> on <strong>10 June 1883</strong> and baptized three days later. The family was Orthodox, and he was baptized at the <strong>Staro-Krasnoselye church of the Molodechno deanery</strong>, Vileika district, Vilna gubernia.<sup><a href="#source-1">1</a></sup> Today that area is in Belarus, between Minsk and Vilnius. Between the world wars it was Poland's Wilno Voivodeship, which explains the "Vilna, Poland" on his American papers.</p>
-      <figure class="map-figure">
-        <svg class="map" viewBox="0 0 480 330" role="img" aria-labelledby="map-region-title map-region-desc">
-<title id="map-region-title">Map of the Molodechno area</title>
-<desc id="map-region-desc">Krasnoe lies about 17 km east of Molodechno and 30 km south of Vileika, between Vilnius and Minsk, in what is now Belarus.</desc>
-<rect class="map-sea" width="480" height="330"/><path class="map-land" d="M0,0L480,0L480,330L0,330ZM0,0L480,0L480,330L0,330Z"/><path class="map-border" d="M0,225.8L2.2,225.5L9.4,226.4L21,231.3L28.2,230L34.8,226L40.9,218.9L43.7,213.1L47,200.7L48.7,197.6L51.4,197.1L61.4,200.7L74.1,199.8L77.5,197.1L83.5,188.2L87.4,186.4L89.6,186.9L90.7,187.8L91.3,189.1L102.4,204.2L100.7,205.1L97.4,204.7L94.1,206.4L94.1,209.1L97.4,211.3L98.5,213.6L97.4,215.3L93,217.1L91.8,218.9L93,223.3L96.3,226.9L100.7,229.1L114,231.3L117.3,231.3L119,230L121.7,226.9L123.4,226L128.9,226.9L130.6,226.4L134.5,223.8L135.6,219.8L135.6,207.8L136.1,206.4L137.8,203.8L138.3,202.9L137.8,201.1L137.2,200.7L136.7,200.2L135.6,199.3L135,196.7L133.4,194L132.3,192.2L130.6,190.4L130,190.4L128.4,190.9L127.8,190.9L127.3,190L125.6,185.1L125.1,182.9L124,180.7L121.7,179.3L119.5,179.8L110.7,184.7L104,185.1L100.7,183.8L98.5,180.7L98.5,174L101.3,168.2L108.5,159.7L111.2,153.9L111.8,149L111.8,143.2L112.3,136.5L114,131.1L116.2,128L125.6,122.2L128.9,119.1L131.1,115L131.7,109.6L130.6,104.7L127.3,95.3L126.2,89.9L126.2,86.8L126.7,84.1L127.8,81.4L128.4,78.7L128.4,76L127.8,62.5L128.4,58.9L130,56.2L133.4,53.5L135,52.6L136.1,52.6L136.7,52.1L137.2,49.9L137.2,47.6L136.1,42.2L135.6,40L137.2,35L140.6,31.9L143.9,28.7L147.2,25.1L148.3,22.4L148.3,20.1L148.9,17.9L151.1,16.5L156.6,13.8L159.4,13.8L164.9,15.1L167.7,15.1L186.5,11.5L192,8.4L194.3,5.6L197,2L198.3,0"/>
-<text class="map-country" x="40.1" y="13.4">LITHUANIA</text><text class="map-country" x="378.4" y="40.1">BELARUS</text><circle class="map-dot" cx="60.1" cy="83.6" r="4"/><text class="map-label" x="69.1" y="88.6" text-anchor="start">Vilnius (Vilna)</text><circle class="map-dot" cx="411.7" cy="290.9" r="4"/><text class="map-label" x="420.7" y="295.9" text-anchor="start">Minsk</text><circle class="map-dot" cx="299.8" cy="183.4" r="4"/><text class="map-label" x="290.8" y="188.4" text-anchor="end">Molodechno</text><circle class="map-dot" cx="310.9" cy="135.6" r="4"/><text class="map-label" x="319.9" y="140.6" text-anchor="start">Vileika</text><circle class="map-key" cx="336.6" cy="200.3" r="6"/><text class="map-label map-label-key" x="345.6" y="205.3" text-anchor="start">Krasnoe</text></svg>
-        <figcaption>Krasnoe and the nearby towns, with today's border between Lithuania and Belarus. Fred's village, Mozolei, belonged to the Krasnoe parishes.</figcaption>
+      <figure class="map-figure map-figure-wide">
+        <a class="map-zoom" href="assets/map-1915-krasnoe-full.jpg">
+          <svg class="map map-photo" viewBox="0 0 2400 1550" role="img" aria-labelledby="map-1915-title map-1915-desc">
+            <title id="map-1915-title">Krasnoe area on a 1915 map</title>
+            <desc id="map-1915-desc">Part of a German army map printed in 1915 from the Russian three-verst survey. Krasnoje (Krasnoe) is on the Usha river by the railway. Mosoli (Mozolei) lies to the northeast, Jonzewitschi (Ivontsevichi) to the southwest, and Granitschi (Granich) to the southeast.</desc>
+            <image href="assets/map-1915-krasnoe.jpg" width="2400" height="1550"/>
+            <ellipse class="map-ring" cx="825" cy="584" rx="190" ry="56"/>
+            <ellipse class="map-ring" cx="1586" cy="392" rx="140" ry="48"/>
+            <ellipse class="map-ring" cx="667" cy="1180" rx="235" ry="54"/>
+            <ellipse class="map-ring" cx="2145" cy="1168" rx="228" ry="52"/>
+          </svg>
+        </a>
+        <figcaption>The family's villages on a German army map printed in 1915 from the Russian three-verst survey, about 1:126,000. Ringed: <em>Krasnoje</em> (Krasnoe), <em>Mosoli</em> (Mozolei, Fred's family), <em>Jonzewitschi</em> (Ivontsevichi, Elena Kozel's village) and <em>Granitschi</em> (Granich, Ivan Rodzevich's village). Tap for a larger copy.<sup><a href="#source-17">17</a></sup></figcaption>
+      </figure>
+      <figure class="map-figure map-figure-wide">
+        <div id="today-map" class="leaflet-map" role="region" aria-label="Zoomable present-day map of Krasnoe, Mozolei, Ivontsevichi and Granich"></div>
+        <figcaption>The same villages today: Krasnoe (Краснае), Mozolei (Мазалі), Ivontsevichi (Івонцавічы) and Granich (Гранічы), about 17 km east of Molodechno and 30 km south of Vileika. Use + and − to zoom.</figcaption>
       </figure>
       <p>His parents were <strong>Мартин Николаевич Родзевич (Martin Rodzevich)</strong> of the village of Mozolei and <strong>Елена Яковлевна Козел (Elena Kozel)</strong> of Ivontsevichi. They married on <strong>1 June 1875</strong> at the Novo-Krasnoselye church, both twenty years old. Fred's godmother was <strong>Anna Kozel</strong>, almost certainly Elena's sister: the same surname and the same patronymic, Yakovlevna.<sup><a href="#source-2">2</a>,<a href="#source-1">1</a></sup></p>
       <p>Martin and Elena had at least five sons:<sup><a href="#source-3">3</a></sup></p>
@@ -141,6 +152,7 @@
         <li id="source-14">1950 U.S. census, Greenfield (<a href="https://www.familysearch.org/ark:/61903/1:1:6F3K-55VS">6F3K-55VS</a>; citizen: no). Anna's obituaries in the <em>Greenfield Recorder</em> (19 April 1974, p. 7) and the <em>Springfield Union</em> (20 April 1974, p. 9), and Find a Grave memorial 116003488.</li>
         <li id="source-15">Molodechno town Orthodox church, 1904 marriages, FamilySearch film DGS 004219608: sheet 60v, entries 14–17 (frame 47); sheets 61v–62, entries 18–21 (frame 42, filmed again at frame 88); sheet 64v, entries 28–30 (frame 93). No frame between 1 and 140 shows sheets 62v–64. None of the grooms in entries 18–21 is Fred.</li>
         <li id="source-16">1882 births, read for December: Staro-Krasnoselye church (DGS 007765612, pages 520–523) and Novo-Krasnoselye church (DGS 004219612, pages 33–33v). Neither has a girl whose parents are Ephraim and Elizabeth.</li>
+        <li id="source-17">Reihe XIV, Blatt 6, <em>Radoschkowitschi</em>, Gouvernement Wilna u. Minsk (Kartographische Abteilung des Stellvertretenden Generalstabs der Armee, Auflagedruck 1915), a German edition of the Russian three-verst map. Library of Congress, G7010 s126 .R8; scan from <a href="http://igrek.amzp.pl/">Mapster</a>. Present-day locations from OpenStreetMap.</li>
       </ol>
     </section>
   </main>
@@ -150,5 +162,7 @@
   </footer>
 
   <script src="assets/site.js"></script>
+  <script src="assets/vendor/leaflet-1.9.4/leaflet.js"></script>
+  <script src="assets/family-map.js"></script>
 </body>
 </html>

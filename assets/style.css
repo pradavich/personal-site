@@ -184,3 +184,11 @@ nav a[aria-current="page"] { color: var(--text); }
 .photo-pair figure { margin: 0; }
 .photo-pair img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 10px; }
 .photo-pair figcaption { margin-top: 10px; font-size: 0.9rem; color: var(--muted); }
+
+
+.map-figure-wide { max-width: 720px; }
+.map-zoom { display: block; }
+.map-photo { border-radius: 10px; }
+.map-ring { fill: none; stroke: #b3261e; stroke-width: 7; }
+.leaflet-map { height: 380px; border: 1px solid var(--rule); border-radius: 10px; z-index: 0; }
+.map-tip { font: 500 12px var(--sans); padding: 2px 6px; }
