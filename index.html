@@ -5,16 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Peter Radavich</title>
   <meta name="description" content="Peter Radavich — family history, chickens, sourdough, and Baltimore.">
+  <link rel="canonical" href="https://radavich.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Peter Radavich">
+  <meta property="og:description" content="Family history from Vilna to Greenfield, sourdough, hens, and Baltimore.">
+  <meta property="og:url" content="https://radavich.com/">
+  <meta property="og:image" content="https://radavich.com/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <a class="skip" href="#top">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#top">PR</a>
-    <nav>
+    <a class="wordmark" href="#top" aria-label="Peter Radavich, top of page">PR</a>
+    <nav aria-label="Main">
       <a href="#family">Family</a>
       <a href="#homestead">Homestead</a>
       <a href="#kitchen">Kitchen</a>
@@ -40,7 +49,7 @@
         For years, all the family knew was that my great-grandfather Fred came
         from "Vilna." He turned out to be Фаддей Родзевич, born in 1883 in a
         village near Molodechno, in what is now Belarus. Getting him from
-        there to Greenfield, Massachusetts took two crossings, a decade apart
+        there to Greenfield, Massachusetts took two crossings, fifteen years apart
         from his wife, and a detour through Buenos Aires.
       </p>
       <div class="timeline">
@@ -62,7 +71,7 @@
           <span class="year">1920</span>
           <div>
             <h3>Buenos Aires</h3>
-            <p>Sails alone on the SS <em>Vestris</em> to meet Anna, who had made her way there from Vilna.</p>
+            <p>Sails alone on the SS <em>Vestris</em> to meet Anna, who had somehow got there from Vilna.</p>
           </div>
         </article>
         <article>
@@ -73,7 +82,11 @@
           </div>
         </article>
       </div>
-      <p class="more"><a href="family-history.html">The full story, sources and open questions →</a></p>
+      <div class="related">
+        <a href="family-history.html"><strong>Fred Radavich, 1883–1939</strong><span>The full story, with sources and open questions</span></a>
+        <a href="anna.html"><strong>Anna Shupaka Radavich, 1882–1974</strong><span>From Vilna gubernia to Buenos Aires to Greenfield</span></a>
+        <a href="finding-fred.html"><strong>How I found Fred</strong><span>Research notes for the Vilna gubernia</span></a>
+      </div>
     </section>
 
     <section id="homestead">
@@ -100,6 +113,7 @@
           <p>Homemade yogurt is cheap and easy. Labneh is just yogurt strained a step further — cream cheese, only tangier.</p>
         </li>
       </ul>
+      <p class="more"><a href="kitchen.html">Recipes: the whey loop →</a></p>
     </section>
 
     <section id="baltimore">
@@ -143,13 +157,6 @@
     <p>&copy; <span id="year">2026</span> Peter Radavich · Baltimore, Maryland</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // Assemble the address in the browser to keep it away from simple scrapers.
-    const email = document.getElementById('email');
-    const addr = ['hello', 'radavich.com'].join('@');
-    email.href = 'mailto:' + addr;
-    email.textContent = addr;
-  </script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
